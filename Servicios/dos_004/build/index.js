@@ -1,0 +1,9 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+//import Servidor from './configuracion/PruebaServer';
+const Servidor_1 = __importDefault(require("./configuracion/api/Servidor"));
+const servidor = new Servidor_1.default();
+servidor.iniciarServidor();
