@@ -1,0 +1,95 @@
+serivio en la nube
+ventajas de servicio en la nube
+
+
+caracteristicas de servicio en la nube()
+{
+	Concepto{
+		El Cloud Computing como ya se ha mencionado antes, es la tecnologia que permite utilizar diferentes servicios
+		como lo es el almacenamiento de informacion, uso de aplicaciones, conexion a dispositivos, etc. Sin embargo, entre todo su abanico de opciones de trabajo tenemos ciertas caracteristicas destacables para el mundo de los negocios.
+	}
+	negocios.AlmacenamientoExterno{
+		Como ya hemos conocido, esta caracteristica es una de lasmas utilicadas y conocidas del Cloud Computing, la cual permite a cualquier persona natural o juridica poder repositar su informacion en espacios de servidores remotos a traves de internet esto sin ocupar espacio del disco duro local. Esta caracteristica permite trabajar con grandes volumenes de datos que varian entre documentos, plataformas o hasta bases de datos; sin la necesidad de invertir en na infraestructura fisica local robusta.
+	}
+	negocios.AplicacionesOnline{
+		Esta caracteristica representa un gran valor del Cloid Computing ante las empresas, pues el poder manejar y desplegar aplicaciones de uso online sin discriminacion de trabajo, es decir, estas pueden ser de uso medico, contable, ofimatico, de diseño, etc.
+		Esto permite a la empresa ahorrar espacio en los equipos de computo al evitar la instalacion de software y la integracion de modelos de trabajo en los grupos laborales.
+	}
+	negocios.ConexionEnCualquierLugaryMomento{
+		Toda caracteristica del cloud computing esta potenciada con esta cualidad, y es que el trabajo de servicios en la nube esta diseño para ser accesible desde cualquier punto de red de Internet de cualquier parte del mundo. Esto para un negocio significa la oportunidad de trabajar y consultar informacion sin tener que desplegar infraestructuras demasiado robustas para cada empleado y desentralizar el lugar de trabajo fuera de las instalaciones de la empresa.
+	}
+	negocios.ComunicacionesGlobales{
+		Gracias al Cloud computing el manejo y produccion de nueva informacion puede darse de manera "instantanea" entre grupos de trabajo que esten separados por el Globo, pudiendo establecer una comunicaciones eficiente entre ellos mediante el uso de herramientas como la mensajeria, el teletrabajo, comunicacion audiovisual, etc.
+	}
+	negocios.SeguridadAvanzada{
+		Como venimos observando en este momento, el Cloud Computing, ofrece una serie de caracteristicas tanto para personas naturales como juridicas que podemos resumir en el uso de la informacion. En esta situacion es compotente que los involucrados se pregunten la por la seguridad que tienen sus datos al confiarsela al Cloud Computing; y es que si existe la seguridad de estos datos, pero se debe aprender a configurar y buscar.
+		Dependiendo del proveedor de Cloud se tendran ciertas politicas de seguridad y tratamiento de la informacion, pero en su mayoria, todas estas son dificiles de penetrar por terceros o sin tener las claves de acceso suficientes y correspondientes. De la misma manera los mismo proveedores suelen ofrecer el servico de Backups o copias de seguridad, servicios de antivirus y oficinas de tratos de datos
+	}
+	escalado masivo{
+
+	}
+	informacion homogenea{
+
+	}
+	vitualizacion{
+
+	}
+	Coste menor a otros software{
+
+	}
+	Distribucion amplia{
+
+	}
+	Orientado al servicio{
+
+	}
+	Servicio bajo demanda{
+
+	}
+	Acceso a red de servicios{
+
+	}
+	Elasticidad y rapidez{
+
+	}
+
+	Referencias
+	{
+		Las 5 caracteristicas del Cloud Computing mas relevantes. Kyocera Document solutions España SA. Enlace web: kyoceradocumentsolutions.es/es/smarter-workspaces/business-challenges/the-cloud/las-5-caracteristicas-del-cloud-computing-mas-relevantes-para-los-negocios.html
+
+		Cloud Computing: Caracteristicas y funcionamiento. Ealde Bussiness School España. Marketing y Comunicacion. Marzo 30 del 2019. Enlace Web: https://www.ealde.es/cloud-computing-caracteristicas-funcionamiento/
+
+		https://openwebinars.net/blog/cloud-computing-que-es-caracteristicas-y-ventajas/
+
+		https://iciredimpagados.com/blog/cloud-computing/
+
+		https://blogs.sas.com/content/sasla/2014/06/05/cinco-caracteristicas-esenciales-de-la-computacion-en-lanube/
+
+		https://www.threepoints.com/blog/cloud-computing-principales-proveedores-y-casos-de-exito
+	}
+}
+principales proveedores de servicios en la nube y sus caracteristicas()
+{
+	Microsoft{
+		Microsoft se posiciona hoy por hoy entre los principales proveedpres de cloud computing, esto es devido a su oferta de servicios en las tres capas de la nube (IaaS, PaaS y SaaS),su gran gestion con su clientela y su ayuda a impementar sistemas como las AI, ML y Blockchain en entronos de produccion innovadores.
+	}
+	Amazon{
+		La nube de Amazon Web service ha sido puesta como un sistema de Cloud Computing de ejemplo en el movimiento, pues esta es la primera en romper los paradigamas propios de esta industria de software, ofreciendo una experiencia al usuario secilla u elegante, ademas de tener precios muy competitivos y excelentes categorias de servicios.
+	}
+	IBM
+	{
+		Es uno de los proveedores Cloud computing que ofrece los tres servicios en la multicapa de IaaS, PaaS y SaaS, lo cuaal aporta una integracion fluida, con mayor opciones y mayor seguridad cibernetica a sus clientes.
+	}
+	Salesforce.com
+	{
+		Este servicio en la nube solia estar empatado con Amazon Web Service en la segunda posicion, sin embargo sigue siendo un de los mas importantes servicios de Cloud Computing, enfocado a la innocacion digital y la estrategia disruptiva. Esta ofrece unicamente el servicio de Saas lo que limita su numero de clientes.
+	}
+	SAP
+	{
+		Posee una amplia gama de servicios para sus clientes como lo es ser proveedor de aplicaciones empresariales en todas las compañias lindeas del mundo, tener alianzas con Amazon y Google lo que complemente los acuerdos con IBM y Microsot, brindando una sensacion de amplia adaptabilidad y confianza antes cualquier situacion que presente su clientela.
+		SAP posee un prometedor futuro en el negocio del cloud computing gracias a su solucion HANA, una tecnologia de procesamiento in-memory que permite desarrollar nuevas aplicaciones o modulos personalizados para cualquiera de las soluciones de SAP
+	}
+}
+
+
+

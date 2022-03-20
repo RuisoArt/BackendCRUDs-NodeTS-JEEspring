@@ -1,0 +1,37 @@
+Desarrollo orientado a servicios
+
+corte 1 y 2 --> metodologia general
+{
+	Talleres 35%
+	sustentacion talleres 35%
+	Quiz 30%
+}
+
+Proyecto final --> desarrollado a lo largo del semestre
+{
+	entregar idea o propuesta 10%
+	contexto y sustentacion 30%
+	desarrollo 60%
+}
+
+Tematicas --> apuntes 08-01-2022
+{
+	Parte del contenido se dara por medio de campus virtual
+
+	Buenos Requerimientos para evitar "telefono roto" dentro del desarrollo del sistema
+	Tener buenas practicas de GIT
+	Tener en cuenta lo que se necesita hacerse para resolver el problema, lo que se conoce y lo que no
+	Establecer la problematica que se quiere solucionar
+	Obtener la mayor cantidad de informacion posible
+	Presentar resultados
+
+
+}
+
+Tareas
+{
+	Actividad Diagnostica
+	Cuenta AWS
+	Cuadrar hora de tutoria.getGrupo()
+	
+}
