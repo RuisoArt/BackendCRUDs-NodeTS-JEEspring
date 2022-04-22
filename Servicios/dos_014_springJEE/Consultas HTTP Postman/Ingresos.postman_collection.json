@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "2d0aba58-903d-4db5-b03d-c9e9a36da83d",
+		"name": "Ingresos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarIngreso",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreUniversidad\" : \"nombrePostman\",\r\n    \"nitUniversidad\" :\"nit-postpostmanman01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ingreso/listarIngresos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ingreso",
+						"listarIngresos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearIngreso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codUsuarioFK\":{\"codUsuario\":\"1\"}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ingreso/creameIngresos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ingreso",
+						"creameIngresos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarIngresoID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ingreso/listarIngresos/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ingreso",
+						"listarIngresos",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarIngresoID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ingreso/eliminarIngresos/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ingreso",
+						"eliminarIngresos",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarIngreso",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codIngreso\":\"6\",\r\n    \"codUsuarioFK\":{\"codUsuario\":\"2\"}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ingreso/editarIngresos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ingreso",
+						"editarIngresos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contarIngreso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ingreso/contar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ingreso",
+						"contar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

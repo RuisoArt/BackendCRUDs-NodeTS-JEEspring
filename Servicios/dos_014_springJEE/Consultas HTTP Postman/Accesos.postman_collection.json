@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "b348dc77-f85a-40a2-a53c-59f1e7400a28",
+		"name": "Accesos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarAccesos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/acceso/listarAccesos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acceso",
+						"listarAccesos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearAccesos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correoAcceso\":\"Hamburguesa@tengohambre.com\",\r\n    \"claveAcceso\":\"chocolatespassword\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/acceso/crearAcceso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acceso",
+						"crearAcceso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarAccesosID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/acceso/listarAccesos/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acceso",
+						"listarAccesos",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarAccesosID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/acceso/eliminarAcceso/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acceso",
+						"eliminarAcceso",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarAccesos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codUsuario\":\"5\",\r\n    \"correoAcceso\":\"correoHamburguesa@tengohambre.com\",\r\n    \"claveAcceso\":\"chocolatespassword\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/acceso/editarAcceso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acceso",
+						"editarAcceso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contarAccesos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/acceso/contar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"acceso",
+						"contar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

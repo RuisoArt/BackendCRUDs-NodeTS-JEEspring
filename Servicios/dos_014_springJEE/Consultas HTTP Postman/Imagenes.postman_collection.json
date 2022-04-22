@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "5ce76316-af86-4500-a1e7-36f0d17dd046",
+		"name": "Imagenes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarImagenes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreUniversidad\" : \"nombrePostman\",\r\n    \"nitUniversidad\" :\"nit-postpostmanman01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/imagen/listarImagenes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"imagen",
+						"listarImagenes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearImagenes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codUsuarioFK\":{\"codUsuario\":\"1\"},\r\n    \"nombrepublicoImagen\":\"nombre Postman\",\r\n    \"nombreprivadoImagen\":\"privado Postman\",\r\n    \"tipoImagen\":\"tipo Postman\",\r\n    \"tamañoImagen\":\"tamaño Postman\",\r\n    \"favoritaImagen\":\"2\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/imagen/crearImagen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"imagen",
+						"crearImagen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarImagenesID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/imagen/listarImagenes/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"imagen",
+						"listarImagenes",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarImagenesID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/imagen/eliminarImagenes/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"imagen",
+						"eliminarImagenes",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarImagenes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codImagen\":\"6\",\r\n    \"codUsuarioFK\":{\"codUsuario\":\"1\"},\r\n    \"nombrepublicoImagen\":\"nombre Postman ACTUALIZADO\",\r\n    \"nombreprivadoImagen\":\"privado Postman\",\r\n    \"tipoImagen\":\"tipo Postman\",\r\n    \"tamañoImagen\":\"tamaño Postman\",\r\n    \"favoritaImagen\":\"2\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/imagen/editarImagen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"imagen",
+						"editarImagen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contarImagenes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/imagen/contar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"imagen",
+						"contar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

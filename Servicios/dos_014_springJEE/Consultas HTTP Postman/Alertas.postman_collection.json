@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "5fab93e7-e333-4583-ac34-6971ff789a4c",
+		"name": "Alertas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarAlertas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/alerta/listarAlertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alerta",
+						"listarAlertas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearAlertas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codUsuarioFK\":{\"codUsuario\":\"1\"},\r\n    \"diasAlerta\":\"1\",\r\n    \"mesesAlerta\":\"1\",\r\n    \"tituloAlerta\":\"HAMBRE\",\r\n    \"detalleAlerta\":\"TENGO Hambre de DONAS!!!!!\",\r\n    \"estadoAlerta\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/alerta/crearAlerta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alerta",
+						"crearAlerta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarAlertasID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/alerta/listarAlertas/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alerta",
+						"listarAlertas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarAlertasID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/alerta/eliminarAlertas/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alerta",
+						"eliminarAlertas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarAlertas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codAlerta\":\"6\",\r\n    \"codUsuarioFK\":{\"codUsuario\":\"1\"},\r\n    \"diasAlerta\":\"1\",\r\n    \"mesesAlerta\":\"1\",\r\n    \"tituloAlerta\":\"HAMBRE\",\r\n    \"detalleAlerta\":\"TENGO Hambre de DONAS!!!!! Y CAFE!!!!!!!!!!!!!!!\",\r\n    \"estadoAlerta\":\"1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/alerta/editarAlerta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alerta",
+						"editarAlerta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contarAlertas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/alerta/contar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alerta",
+						"contar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

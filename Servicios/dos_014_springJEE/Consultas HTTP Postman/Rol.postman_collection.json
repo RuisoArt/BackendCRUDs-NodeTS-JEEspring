@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "c5a83e01-6d32-4228-bcd3-7fbf71b9610e",
+		"name": "Rol",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarRoles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/rol/listarRoles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"rol",
+						"listarRoles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearRoles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreRol\":\"nombre rol Postman\",\r\n    \"estadoRol\":\"1\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/rol/crearRol",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"rol",
+						"crearRol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarRolesID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/rol/listarRoles/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"rol",
+						"listarRoles",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarRolID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/rol/eliminarRoles/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"rol",
+						"eliminarRoles",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarRoles",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codRol\":\"6\",\r\n    \"nombreRol\":\"nombre rol Postman ACTUALIZADO\",\r\n    \"estadoRol\":\"1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/rol/editarRol",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"rol",
+						"editarRol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contarRoles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/rol/contar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"rol",
+						"contar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
