@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "2a6663f8-5c16-473c-a41c-3d4bd60f80da",
+		"name": "PedidoCliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarPedidoCliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pedido_cliente/listar_pedidos_clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido_cliente",
+						"listar_pedidos_clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearPedidoCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n        \"idPedidoFK\": {\"idPedido\": 1},\r\n        \"idClienteFK\": {\"idCliente\": 1},\r\n        \"descripcion\": \"el cliente gano la rifa 01 POSTMAN\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pedido_cliente/crear_pedido_cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido_cliente",
+						"crear_pedido_cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarPedidoClienteID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pedido_cliente/listar_pedido_cliente/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido_cliente",
+						"listar_pedido_cliente",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarPedidoClienteID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pedido_cliente/destruir_pedido_cliente/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido_cliente",
+						"destruir_pedido_cliente",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarPedidoCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idPedidoCliente\": 6,\r\n        \"idPedidoFK\": {\"idPedido\": 1},\r\n        \"idClienteFK\": {\"idCliente\": 1},\r\n        \"descripcion\": \"el cliente ACTUALIZADO\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pedido_cliente/editar_pedido_cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido_cliente",
+						"editar_pedido_cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contarPedidoCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pedido_cliente/contar_pedidos_de_clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido_cliente",
+						"contar_pedidos_de_clientes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
