@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "73ee233d-24d2-4769-8b55-283fa3bb2ee7",
+		"name": "Pedido",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarPedido",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pedido/listar_pedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido",
+						"listar_pedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"numeroPedido\": \"Pedido rifado 01 POSTMAN :V \",\r\n        \"descripcion\": \"este producto fue rifado alv\",\r\n        \"idProductoFK\": {\"idProducto\": 1}\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pedido/crear_pedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido",
+						"crear_pedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarPedidoID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pedido/listar_pedido/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido",
+						"listar_pedido",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarPedidoID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pedido/eliminar_pedido/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido",
+						"eliminar_pedido",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarPedido",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idPedido\": 6,\r\n        \"numeroPedido\": \"Pedido :VV ACTUALIZADO\",\r\n        \"descripcion\": \"este producto fue rifado alv\",\r\n        \"idProductoFK\": {\"idProducto\": 1}\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pedido/editar_pedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido",
+						"editar_pedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contarPedido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pedido/contar_pedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pedido",
+						"contar_pedido"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "d0f953ed-6ec3-4657-9369-6a66efb78ba2",
+		"name": "Proveedor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarProveedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proveedor/listar_proveedor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proveedor",
+						"listar_proveedor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearProveedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n        \"nombreProveedor\": \"proveedor POSTMAN\",\r\n        \"nitProveedor\": \"nit-1234561\",\r\n        \"direccion\": \"cra01\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/proveedor/crear_proveedor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proveedor",
+						"crear_proveedor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarProveedorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proveedor/listar_proveedores/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proveedor",
+						"listar_proveedores",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarProveedorID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proveedor/eliminar_proveedor/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proveedor",
+						"eliminar_proveedor",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarProveedor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idProveedor\": 7,\r\n        \"nombreProveedor\": \"proveedor ACTUALIZADO\",\r\n        \"nitProveedor\": \"nit-1234561\",\r\n        \"direccion\": \"cra01\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/proveedor/editar_proveedor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proveedor",
+						"editar_proveedor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contarProveedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/proveedor/contar_proveedores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"proveedor",
+						"contar_proveedores"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
