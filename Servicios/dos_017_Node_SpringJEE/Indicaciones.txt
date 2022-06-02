@@ -1,0 +1,63 @@
+
+Indicaciones:
+
+1. Realizar grupos de 2 o trabajar individual
+2. Realizar el CRUD sobre las tablas dadas en el diagrama E-R
+3. Implementar las siguientes consultas en NODE:
+
+- Seleccionar el cliente dependiendo del id del prestamo pasado por parametro en la ruta
+
+	SELECT c.id_cliente, c.identificacion, c.nombre, c.apellido, c.direccion, c.telefono,pb.id_prestamo, pb.descripcion
+	FROM clientes c
+	INNER JOIN prestamos_biblio pb
+	ON c.id_cliente = pb.id_cliente
+	WHERE pb.id_prestamo = 1;
+
+- Seleccionar la editorial dependiendo del id del libro pasado por parametro en la ruta
+
+	SELECT e.id_editorial, e.nombre, e.pais, e.telefono, l.id_libro, l.titulo
+	FROM editoriales e
+	INNER JOIN libros l
+	ON e.id_editorial = l.id_editorial
+	WHERE l.id_libro=1;
+
+- Seleccionar el libro dependiendo del id del Detalle_Prestamo pasado por parametro en la ruta
+
+	SELECT l.id_libro, l.titulo, l.fecha_publicacion, l.codigo, l.isbn, l.id_editorial, dp.id_detalle_prestamos, dp.descripcion
+	FROM libros l
+	INNER JOIN detalle_prestamos dp
+	ON l.id_libro = dp.id_detalle_prestamos
+	WHERE dp.id_detalle_prestamos=1;
+
+4. Implementar las siguientes consultas en SPRING:
+
+- Count para traer el total de registros de cada tabla
+	SELECT COUNT (*) FROM Entidad *;
+
+- Seleccionar la editorial dependiendo del id del libro pasado por parametro en la ruta
+
+	SELECT ed.id_editorial, ed.nombre, ed.pais, ed.telefono, li.id_libro, li.titulo
+	FROM editoriales ed
+	INNER JOIN libros li
+	ON ed.id_editorial = li.id_editorial
+	WHERE li.id_libro = ?1
+
+- Seleccionar el cliente dependiendo del id del prestamo pasado por parametro en la ruta
+
+	SELECT cli.id_cliente, cli.identificacion, cli.nombre, cli.apellido, cli.direccion, cli.telefono, pres.id_prestamo, pres.descripcion
+	FROM clientes cli
+	INNER JOIN prestamos_biblio pres
+	ON cli.id_cliente = pres.id_cliente
+	WHERE pres.id_prestamo = ?1
+
+- Seleccionar el libro dependiendo del id del Detalle_Prestamo pasado por parametro en la ruta
+
+	SELECT li.id_libro, li.titulo, li.fecha_publicacion, li.codigo, li.isbn, li.id_editorial
+	FROM libros li
+	INNER JOIN detalle_prestamos de
+	ON li.id_libro = de.id_libro
+	WHERE de.id_detalle_prestamos = ?1
+
+5. Realizar las respectivas pruebas en postman o insomnia.
+
+
