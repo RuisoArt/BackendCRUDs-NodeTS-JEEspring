@@ -15,12 +15,12 @@ public class FacultadServicio {
     private FacultadRepo facultadRepo;
 
     public List<FacultadEntity> dameTodasFacultades(){
+
         return facultadRepo.findAll();
     }
-    public FacultadEntity creameUnaFacultad(FacultadEntity facultadEntity){
-        return facultadRepo.save(facultadEntity);
-    }
+    public FacultadEntity creameUnaFacultad(FacultadEntity facultadEntity){ return facultadRepo.save(facultadEntity); }
     public Optional<FacultadEntity> buscameUnID(Long id){
+
         return facultadRepo.findById(id);
     }
     public void elimibarFacultad(Long id){
@@ -29,7 +29,8 @@ public class FacultadServicio {
     public FacultadEntity actualizaFacultad(FacultadEntity facultadEntity){
         return facultadRepo.save(facultadEntity);
     }
-    public Integer numerarFacultad(){
-        return facultadRepo.contarFacultades();
+    public Integer numerarFacultad() {
+
+    return facultadRepo.contarFacultades();
     }
 }
